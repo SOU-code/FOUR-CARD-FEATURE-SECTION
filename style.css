@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: hsl(0, 0%, 98%);
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  width: 70%;
+}
+.container-header {
+  text-align: center;
+  margin: 0 27%;
+}
+.head-small {
+  color: hsl(234, 12%, 34%);
+  font-size: 3.2rem;
+  font-weight: 200;
+}
+.head-big {
+  color: hsl(234, 12%, 34%);
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+.head-content {
+  padding-top: 2rem;
+  color: hsl(229, 6%, 66%);
+}
+.container-content {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  height: 60%;
+}
+.box1,
+.box2,
+.box3 {
+  width: 30%;
+  margin: 2rem auto;
+}
+.box {
+  box-shadow: -0.2rem 0.5rem 0.5rem 0.5rem #2b494317;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.box-header {
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 0.5rem;
+}
+.box-content {
+  color: hsl(229, 6%, 66%);
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+.box-logo {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.box-logo img {
+  width: 5rem;
+}
+.supervisor {
+  border-top: 0.4rem solid hsl(180, 62%, 55%);
+}
+.team {
+  border-top: 0.4rem solid hsl(0, 78%, 62%);
+}
+.karma {
+  margin-top: 3rem;
+  border-top: 0.4rem solid hsl(34, 97%, 64%);
+}
+.calculator {
+  border-top: 0.4rem solid hsl(212, 86%, 64%);
+}
+/* ------------------Media Query------------------- */
+@media (max-width: 1000px) and (min-width: 500px) {
+  body {
+    display: block;
+    height: auto;
+  }
+  .container {
+    margin: auto;
+  }
+  .container-header {
+    margin: 0;
+  }
+  .container-content {
+    display: block;
+    margin: auto;
+  }
+  .head-small,
+  .head-big {
+    font-size: 2.6rem;
+  }
+  .box1,
+  .box2,
+  .box3 {
+    display: block;
+    width: 80%;
+  }
+  .karma {
+    margin-top: 2rem;
+  }
+}
+/* --------------Media Query--------------- */
+@media (max-width: 499px) {
+  html {
+    font-size: 45%;
+  }
+  body {
+    display: block;
+    height: auto;
+  }
+  .container {
+    margin: auto;
+  }
+  .container-header {
+    margin: 0;
+  }
+  .container-content {
+    display: block;
+    margin: auto;
+  }
+  .head-small,
+  .head-big {
+    font-size: 2.6rem;
+  }
+  .box1,
+  .box2,
+  .box3 {
+    display: block;
+    width: 80%;
+  }
+  .karma {
+    margin-top: 2rem;
+  }
+}
